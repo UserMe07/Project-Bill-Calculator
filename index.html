@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lateef&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="top">
+            <h1>Bill Calculator</h1>
+            <p>Share the bill with your friends! ;)</p>
+        </div>
+        <div class="bottom">
+            <label for="bill">Amount to pay:</label>
+            <input type="number" id="bill">
+
+            <label for="people">Amount of people:</label>
+            <input type="number" id="people">
+
+            <label for="tip">Tip</label>
+            <select id="tip">
+                <option value="0" disabled selected>- select the tip -</option>
+                <option value="0.05">5%</option>
+                <option value="0.1">10%</option>
+                <option value="0.15">15%</option>
+                <option value="0.2">20%</option>
+            </select>
+
+            <button class="btn">Count</button>
+            
+            <p class="info"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
